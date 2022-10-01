@@ -13,7 +13,7 @@ import inspect
 import logging
 import typing
 from os import PathLike
-from typing import Any, Callable, Dict, Literal, Optional, Type, Union
+from typing import Callable, Dict, Optional, Union
 
 from . import core, hook, meta
 from . import runner as _vtvt_runner
@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 _T = typing.TypeVar("_T")
 
 
-_var_tracker = contextvars.ContextVar("votakvot._var_tracker")
+_var_tracker = contextvars.ContextVar("sireo._var_tracker")
 _global_runner = None
 
 __all__ = [
